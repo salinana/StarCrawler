@@ -22,7 +22,7 @@ while emptyData=="display: block":
     emptyData=driver.find_element(By.CSS_SELECTOR,"div[id='emptyData']").get_attribute("style")
     print(emptyData)
 
-
+the_file=open('man.cn.txt', 'w')
 
 print("--------第一页------------")
 
@@ -37,6 +37,9 @@ for starE in starElements:
     print(starE.get_attribute("title"))
     print(starE.get_attribute("href"))
     print(starImg.get_attribute("src"))
+    line=starE.get_attribute("title")+"|"+starE.get_attribute("href")+"|"+starImg.get_attribute("src")+"\n"
+    print(line)
+    the_file.write(line)
 
 # starElements=driver.find_elements(By.CSS_SELECTOR,"p[class='item-main-title_3c-Fh c-font-medium']")
 #
@@ -54,9 +57,9 @@ for pageIndex in range(2,1500):
         print("-------------------------------------------------------------------------")
         print(css)
         element = driver.find_element(By.XPATH,css)
-        time.sleep(10)
+        time.sleep(5)
         element.click()
-        time.sleep(10)
+        time.sleep(5)
         emptyData = driver.find_element(By.CSS_SELECTOR, "div[id='emptyData']").get_attribute("style")
         print(emptyData)
         starElements=driver.find_elements(By.CSS_SELECTOR,"a[href*='baike.baidu.com/item/']")
@@ -69,5 +72,8 @@ for pageIndex in range(2,1500):
             print(starE.get_attribute("title"))
             print(starE.get_attribute("href"))
             print(starImg.get_attribute("src"))
-
+            line = starE.get_attribute("title") + "|" + starE.get_attribute("href") + "|" + starImg.get_attribute(
+                "src") + "\n"
+            the_file.write(line)
+the_file.close()
 driver.quit()
