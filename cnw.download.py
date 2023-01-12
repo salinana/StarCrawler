@@ -5,7 +5,7 @@ import os
 import urllib.request
 
 
-file=open('urls/cn.man.txt', 'r')
+file=open('urls/cn.woman.txt', 'r')
 lines=file.readlines()
 count = 0
 # Strips the newline character
@@ -20,8 +20,8 @@ for line in lines:
     index=words[0]
     name=words[1]
     url=words[3]
-    if not os.path.isdir("images/cnm/"+index+name):
-        os.makedirs("images/cnm/"+index+name)
-    if not os.path.exists("images/cnm/"+index+name+"/"+index+name+".jpeg"):
-        urllib.request.urlretrieve(url, "images/cnm/"+index+name+"/"+index+name+".jpeg")
+    if not os.path.isdir("images/cnw/"+index+name):
+        os.makedirs("images/cnw/"+index+name)
+    if not os.path.exists("images/cnw/"+index+name+"/"+index+name+".jpeg"):
+        urllib.request.urlretrieve(url, "images/cnw/"+index+name+"/"+index+name+".jpeg")
 

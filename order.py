@@ -2,7 +2,7 @@ import os
 
 file=open('man.cn.txt','r')
 lines=file.readlines()
-newfile=open('cn.man.txt','w')
+newfile=open('urls/cn.man.txt', 'w')
 count = 0
 # Strips the newline character
 for line in lines:
