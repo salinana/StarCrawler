@@ -125,7 +125,13 @@ for line in lines:
 
 srecords=sorted(records,key=itemgetter(1),reverse=True)
 
+database.write("const database=[")
+previous=""
+
 for tuple in srecords:
-    record=tuple[0]+"|"+str(tuple[1])+"|"+tuple[2]+"|"+tuple[3]+"|"+tuple[4]+"|"+tuple[5]+"|"+tuple[6]+"|"+tuple[7]+"|"+tuple[8]+"|"+tuple[9]+"|"+tuple[10]+"|"+tuple[11]
-    print(record)
-    database.write(record)
+    record=tuple[0]+"|"+str(tuple[1])+"|"+tuple[2]+"|"+tuple[3]+"|"+tuple[4]+"|"+tuple[5]+"|"+tuple[6]+"|"+tuple[7]+"|"+tuple[8]+"|"+tuple[9]+"|"+tuple[10]+"|"+tuple[11].replace("\n","")
+    if previous!=tuple[11]:
+        previous = tuple[11]
+        database.write("\n"+"'"+record+"'"+",")
+        print(record)
+database.write("]")
