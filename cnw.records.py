@@ -17,9 +17,9 @@ def getDigit(context):
     context = filtrate.sub(r'', context) # remove all non-Chinese characters
     #context = context.encode("utf-8") # convert unicode back to str
     return context
-database=open("database/cnm.records.txt","w")
+database=open("database/cnw.records.txt","w")
 records=[]
-file=open('urls/cn.man.txt', 'r')
+file=open('urls/cn.woman.txt', 'r')
 lines=file.readlines()
 count = 0
 # Strips the newline character
@@ -35,7 +35,7 @@ for line in lines:
     name=words[1]
     url=words[2]
     imgUrl=words[3]
-    detailUrl="profiles/cnm/"+index+name+"/"+index+name+".txt"
+    detailUrl="profiles/cnw/"+index+name+"/"+index+name+".txt"
     if not os.path.exists(detailUrl):
         continue
     pfile = open(detailUrl, 'r')
@@ -113,7 +113,7 @@ for line in lines:
     record = index + "|"+visit +"|"+ name + "|" + "M"+"|"+year+"|"+month+"|"+day+"|"+job+"|"+country+"|"+province+"|"+city+"|"+imgUrl
     print(record)
     if visit and int(visit)>=1000000:
-        tuple = (index, int(visit), name, "M", year, month, day, job, country, province, city, imgUrl)
+        tuple = (index, int(visit), name, "F", year, month, day, job, country, province, city, imgUrl)
         records.append(tuple)
 
     year = ""
