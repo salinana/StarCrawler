@@ -110,7 +110,7 @@ for line in lines:
             #     province="台湾"
             #     city="台湾"
             province,city=getArea(dline.split(":")[1].replace("\n", ""))
-    record = index + "|"+visit +"|"+ name + "|" + "M"+"|"+year+"|"+month+"|"+day+"|"+job+"|"+country+"|"+province+"|"+city+"|"+imgUrl
+    record = index + "|"+visit +"|"+ name + "|" + "F"+"|"+year+"|"+month+"|"+day+"|"+job+"|"+country+"|"+province+"|"+city+"|"+imgUrl
     print(record)
     if visit and int(visit)>=1000000:
         tuple = (index, int(visit), name, "F", year, month, day, job, country, province, city, imgUrl)

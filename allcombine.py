@@ -4,9 +4,11 @@ database_cnm=open("database/cnm.records.txt","r")
 database_cnw=open("database/cnw.records.txt","r")
 database_hkm=open("database/hkm.records.txt","r")
 database_hkw=open("database/hkw.records.txt","r")
+database_twm=open("database/twm.records.txt","r")
+database_tww=open("database/tww.records.txt","r")
 
 records=[]
-list=database_cnm.readlines()+database_cnw.readlines()+database_hkm.readlines()+database_hkw.readlines();
+list=database_cnm.readlines()+database_cnw.readlines()+database_hkm.readlines()+database_hkw.readlines()+database_twm.readlines()+database_tww.readlines();
 for star in list:
     temp=star.split("|")
     temp[1]=int(temp[1])

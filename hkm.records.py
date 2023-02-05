@@ -113,7 +113,7 @@ for line in lines:
     record = index + "|"+visit +"|"+ name + "|" + "M"+"|"+year+"|"+month+"|"+day+"|"+job+"|"+country+"|"+province+"|"+city+"|"+imgUrl
     print(record)
     if visit and int(visit)>=1000000:
-        tuple = (index, int(visit), name, "F", year, month, day, job, country, province, city, imgUrl)
+        tuple = (index, int(visit), name, "M", year, month, day, job, country, province, city, imgUrl)
         records.append(tuple)
 
     year = ""
