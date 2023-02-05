@@ -57,4 +57,4 @@ for line in lines:
             print("简介:" +summaryDiv.text.replace("\n",""))
             pfile.write("简介:" + summaryDiv.text.replace("\n",""))
         except Exception:
-            continue
+            continue0
