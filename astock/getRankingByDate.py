@@ -20,7 +20,7 @@ for code in codes:
     pattern=code+'_'+current_time+'*'
     print(pattern)
     keys=r.keys(pattern)
-    keys=sorted(keys,reverse=True)
+    keys=sorted(keys)
     print(keys)
     for key in keys:
         print(key+":"+r.get(key))

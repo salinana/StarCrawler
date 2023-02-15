@@ -1,61 +1,26 @@
-thread2 124 000908_20230212_21:00:01-->3391
-thread1 213 000665_20230212_21:00:02-->552
-thread2 125 000909_20230212_21:00:04-->522
-thread1 214 000666_20230212_21:00:04-->1646
-thread2 126 000910_20230212_21:00:07-->1615
-thread1 215 000667_20230212_21:00:07-->3378
-thread2 127 000911_20230212_21:00:09-->2559
-thread1 216 000668_20230212_21:00:10-->4616
-thread1 217 000669_20230212_21:00:13-->3235
-thread1 218 000670_20230212_21:00:15-->341
-thread2 128 000912_20230212_21:00:13-->1687
-thread1 219 000671_20230212_21:00:17-->1462
-thread1 220 000672_20230212_21:00:23-->2970
-thread1 221 000676_20230212_21:00:26-->759
-thread1 222 000677_20230212_21:00:28-->2966
-thread1 223 000678_20230212_21:00:30-->1033
-thread1 224 000679_20230212_21:00:32-->2706
-thread1 225 000680_20230212_21:00:34-->1186
-thread1 226 000681_20230212_21:00:36-->87
-thread1 227 000682_20230212_21:00:39-->2490
-thread1 228 000683_20230212_21:00:41-->1939
-thread1 229 000685_20230212_21:00:43-->3687
-thread1 230 000686_20230212_21:00:45-->3524
-thread1 231 000688_20230212_21:00:47-->3554
-thread1 232 000690_20230212_21:00:49-->117
-thread1 233 000691_20230212_21:00:51-->4109
-thread1 234 000692_20230212_21:00:53-->1705
-thread1 235 000695_20230212_21:00:55-->4657
-thread1 236 000697_20230212_21:00:57-->2355
-thread1 237 000698_20230212_21:01:00-->1825
-thread1 238 000700_20230212_21:01:01-->1454
-thread1 239 000701_20230212_21:01:04-->138
-thread1 240 000702_20230212_21:01:06-->2381
-thread1 241 000703_20230212_21:01:08-->2025
-thread1 242 000705_20230212_21:01:10-->1459
-thread1 243 000707_20230212_21:01:11-->2022
-thread1 244 000708_20230212_21:01:13-->3559
-thread1 245 000709_20230212_21:01:16-->1836
-thread1 246 000710_20230212_21:01:18-->816
-thread1 247 000711_20230212_21:01:20-->543
-thread1 248 000712_20230212_21:01:22-->334
-thread2 1 000716_20230212_21:01:22-->24
-thread1 249 000713_20230212_21:01:25-->262
-thread1 250 000715_20230212_21:01:27-->1050
-thread2 2 000717_20230212_21:01:27-->3997
-thread2 3 000718_20230212_21:01:29-->3452
-thread2 4 000719_20230212_21:01:32-->699
-thread2 5 000720_20230212_21:01:35-->3139
-thread2 6 000721_20230212_21:01:38-->42
-thread2 7 000722_20230212_21:01:41-->850
-thread2 8 000723_20230212_21:01:43-->509
-thread2 9 000725_20230212_21:01:46-->102
-Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e9fd850>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/5905ec3ebce22fb3361ccef1f0b55e1b
-Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10de84e80>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/5905ec3ebce22fb3361ccef1f0b55e1b
-Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10de83f10>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/5905ec3ebce22fb3361ccef1f0b55e1b
-Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10eaabc70>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fe649b6a3487e03d8488f94966c668bf/element
-Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10dfa8160>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fe649b6a3487e03d8488f94966c668bf/element
-Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10dfa9b80>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fe649b6a3487e03d8488f94966c668bf/element
-Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10dfa9e80>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fe649b6a3487e03d8488f94966c668bf
-Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10dfab070>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fe649b6a3487e03d8488f94966c668bf
-Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10dfab190>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fe649b6a3487e03d8488f94966c668bf
+thread1 231 000688_20230214_15:34:46-->3217
+thread2 230 001283_20230214_15:34:44-->961
+thread1 232 000690_20230214_15:34:55-->2072
+thread2 231 001288_20230214_15:34:55-->3544
+thread1 233 000691_20230214_15:34:57-->4032
+thread2 232 001289_20230214_15:34:58-->815
+thread1 234 000692_20230214_15:35:00-->3818
+thread2 233 001296_20230214_15:35:00-->2974
+thread1 235 000695_20230214_15:35:02-->4160
+thread2 234 001298_20230214_15:35:03-->1791
+thread1 236 000697_20230214_15:35:05-->2457
+thread1 237 000698_20230214_15:35:07-->705
+thread2 235 001299_20230214_15:35:05-->2047
+thread1 238 000700_20230214_15:35:13-->2397
+thread2 236 001300_20230214_15:35:13-->2793
+thread1 239 000701_20230214_15:35:19-->444
+thread2 237 001301_20230214_15:35:20-->609
+thread1 240 000702_20230214_15:35:21-->3483
+thread2 238 001308_20230214_15:35:22-->3180
+thread1 241 000703_20230214_15:35:24-->404
+thread2 239 001309_20230214_15:35:25-->2115
+thread2 240 001313_20230214_15:35:28-->2731
+thread1 242 000705_20230214_15:35:26-->2187
+thread2 241 001316_20230214_15:35:32-->3432
+thread1 243 000707_20230214_15:35:32-->1597
+thread2 242 001317_20230214_15:35:35-->1498
