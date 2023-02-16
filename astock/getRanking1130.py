@@ -89,7 +89,7 @@ def is_time_between(begin_time, end_time, check_time=None):
 
 while 1:
 
-    if not is_time_between(timeA(11,00), timeA(12,10)):
+    if not is_time_between(timeA(12,00), timeA(12,1)):
         print("Continue")
         continue
 
@@ -127,9 +127,10 @@ while 1:
         delta=0
         if len(vv)>=2:
             delta=int(vv[0])-int(vv[-1])
-        if delta>1000:
+        if delta>2000:
             print("Best:"+kk)
             Sample.main(""+kk, sys.argv[1:])
+            time.sleep(61)
 
     t = time.localtime()
     current_time = time.strftime("%Y%m%d_%H:%M:%S", t)
