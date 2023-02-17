@@ -105,10 +105,12 @@ while 1:
 
     t = time.localtime()
     today_date= time.strftime("%Y%m%d", t)
-    current_time = time.strftime("%Y%m%d_11", t)
+    current_time = time.strftime("%Y%m%d", t)
     print(current_time)
     ranking_dict={}
-    keys=r.keys("*_"+current_time+"*")
+    keys1=r.keys("*_"+current_time+"_11:0*")
+    keys2=r.keys("*_"+current_time+"_11:5*")
+    keys=keys1+keys2
     keys=sorted(keys)
     for key in keys:
         print(key)
